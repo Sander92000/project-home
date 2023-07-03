@@ -13,3 +13,15 @@
 .link{
     @apply underline cursor-pointer text-purple-800;
 }
+
+.nav-item{
+    @apply text-yellow-700;
+}
+
+.tbl-header{
+    @apply border border-slate-300 bg-slate-500 text-white text-sm;
+}
+
+.table-cell {
+    @apply border border-slate-300;
+}

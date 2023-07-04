@@ -25,5 +25,6 @@
         <p>Made by me</p>
     </footer>
 </body>
+@yield('js')
 
 </html>

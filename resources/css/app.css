@@ -25,3 +25,23 @@
 .table-cell {
     @apply border border-slate-300;
 }
+
+
+.dropdown-list {
+    @apply py-2 text-sm text-gray-700 dark:text-gray-200;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 10px;
+    @apply z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-item:hover {
+    @apply bg-slate-50;
+}

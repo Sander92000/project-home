@@ -64,7 +64,3 @@
         </div>
     </div>
 @endsection
-
-@section('js')
-    @vite('resources/js/nav.js')
-@endsection

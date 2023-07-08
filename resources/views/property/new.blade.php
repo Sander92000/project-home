@@ -107,3 +107,7 @@
         </div>
     </div>
 @endsection
+
+@section('js')
+    @vite('resources/js/property.js')
+@endsection

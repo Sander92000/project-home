@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Property;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class PropertyController extends Controller
 {
@@ -15,6 +16,7 @@ class PropertyController extends Controller
 
     public function create(Request $request)
     {
+        $user = Auth::user();
         $prop = new Property([
             'name' => $request->input('name'),
             'transaction' => $request->input('transaction'),
@@ -31,7 +33,7 @@ class PropertyController extends Controller
             'has_garage' => ($request->input('has_garage') == 'true') ? 1 : 0,
             'price' => $request->input('price'),
             'ad_link' => $request->input('ad_link'),
-            'created_by' => 1,
+            'created_by' => $user->id,
             'transaction' => $request->input('transaction')
         ]);
 

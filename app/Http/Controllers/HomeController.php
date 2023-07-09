@@ -11,6 +11,9 @@ use Illuminate\Support\Facades\Log;
 class HomeController extends Controller
 {
 
+    /**
+     * TODO: calculate price per m2
+     */
     public function index()
     {
         $user = Auth::user();
